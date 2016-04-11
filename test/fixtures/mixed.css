@@ -50,3 +50,11 @@ $dir: assets/images;
 		}
 	}
 }
+
+@each $i in (1) {
+	@for $j from $i to 1 {
+		.test-i-$i {
+			background: url($dir/$i$j.png);
+		}
+	}
+}
